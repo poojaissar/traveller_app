@@ -1,0 +1,448 @@
+name: traveller_app
+description: A exported flutter project from FUNCTION12
+
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.18.2 <3.0.0'
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+  #http: 0.11.3
+  
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+  google_fonts: ^4.0.4
+  firebase_core: ^1.6.0
+  firebase_auth: ^3.2.0
+  google_sign_in: ^5.2.1
+  bottom_navy_bar: ^6.0.0
+  table_calendar: ^3.0.2
+  shared_preferences: ^2.1.2
+  
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^2.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  # assets:
+  #   - images/a_dot_burr.jpeg
+  #   - images/a_dot_ham.jpeg
+  assets:
+    - assets/final-design/images/rectangle-926.png
+    - assets/final-design/images/logo-1.png
+    - assets/final-design/images/rectangle-922-bg.png
+    - assets/final-design/images/rectangle-919-bg.png
+    - assets/final-design/images/rectangle-919-bg-VkJ.png
+    - assets/final-design/images/rectangle-933-bg.png
+    - assets/final-design/images/rectangle-926-tpW.png
+    - assets/final-design/images/rectangle-926-a7g.png
+    - assets/final-design/images/group-5617.png
+    - assets/final-design/images/group.png
+    - assets/final-design/images/group-kfG.png
+    - assets/final-design/images/group-101.png
+    - assets/final-design/images/rectangle-941-bg.png
+    - assets/final-design/images/rectangle-922-bg-ZH8.png
+    - assets/final-design/images/rectangle-939-bg.png
+    - assets/final-design/images/group-5618.png
+    - assets/final-design/images/rectangle-922-bg-nGE.png
+    - assets/final-design/images/rectangle-931-bg.png
+    - assets/final-design/images/rectangle-887-bg.png
+    - assets/final-design/images/rectangle-919-bg-2jQ.png
+    - assets/final-design/images/group-NAz.png
+    - assets/final-design/images/group-7.png
+    - assets/final-design/images/group-pni.png
+    - assets/final-design/images/group-xtv.png
+    - assets/final-design/images/group-var.png
+    - assets/final-design/images/group-5618-UcN.png
+    - assets/final-design/images/group-39g.png
+    - assets/final-design/images/group-5617-hk2.png
+    - assets/final-design/images/group-5728.png
+    - assets/final-design/images/group-8qL.png
+    - assets/final-design/images/group-100.png
+    - assets/final-design/images/group-5618-sY2.png
+    - assets/final-design/images/frame.png
+    - assets/final-design/images/group-5728-8wg.png
+    - assets/final-design/images/rectangle-924-bg.png
+    - assets/final-design/images/rectangle-922-bg-fjC.png
+    - assets/final-design/images/rectangle-897-bg.png
+    - assets/final-design/images/frame-fRY.png
+    - assets/final-design/images/rectangle-935-bg.png
+    - assets/final-design/images/rectangle-935-bg-aYW.png
+    - assets/final-design/images/rectangle-919-bg-wP4.png
+    - assets/final-design/images/rectangle-918-bg.png
+    - assets/final-design/images/rectangle-933-bg-Udt.png
+    - assets/final-design/images/group-Sai.png
+    - assets/final-design/images/group-100-bTc.png
+    - assets/final-design/images/group-100-xJA.png
+    - assets/final-design/images/group-5728-Mr6.png
+    - assets/final-design/images/group-5588.png
+    - assets/final-design/images/group-tb8.png
+    - assets/final-design/images/group-FwU.png
+    - assets/final-design/images/group-qFU.png
+    - assets/final-design/images/group-5525.png
+    - assets/final-design/images/group-101-NFQ.png
+    - assets/final-design/images/group-28.png
+    - assets/final-design/images/apple-original.png
+    - assets/final-design/images/group-E2i.png
+    - assets/final-design/images/group-100-fGS.png
+    - assets/final-design/images/group-5642.png
+    - assets/final-design/images/group-5618-aPQ.png
+    - assets/final-design/images/group-100-8vi.png
+    - assets/final-design/images/group-5618-6sY.png
+    - assets/final-design/images/group-Gn2.png
+    - assets/final-design/images/rectangle-893-bg.png
+    - assets/final-design/images/rectangle-888-bg.png
+    - assets/final-design/images/rectangle-921.png
+    - assets/final-design/images/group-jQi.png
+    - assets/final-design/images/group-7Yz.png
+    - assets/final-design/images/group-dGS.png
+    - assets/final-design/images/group-CaS.png
+    - assets/final-design/images/group-Nm4.png
+    - assets/final-design/images/group-LSz.png
+    - assets/final-design/images/rectangle-936-zx6.png
+    - assets/final-design/images/rectangle-886-bg.png
+    - assets/final-design/images/apple-original-JWJ.png
+    - assets/final-design/images/group-28-N4E.png
+    - assets/final-design/images/group-iNz.png
+    - assets/final-design/images/group-GvJ.png
+    - assets/final-design/images/rectangle-895-bg.png
+    - assets/final-design/images/group-cUN.png
+    - assets/final-design/images/auto-group-hhzw.png
+    - assets/final-design/images/group-Y78.png
+    - assets/final-design/images/group-5728-hVp.png
+    - assets/final-design/images/frame-rtW.png
+    - assets/final-design/images/group-100-paS.png
+    - assets/final-design/images/group-5728-BQz.png
+    - assets/final-design/images/group-hgA.png
+    - assets/final-design/images/rectangle-937-bg.png
+    - assets/final-design/images/rectangle-922-bg-dZp.png
+    - assets/final-design/images/group-5617-zfG.png
+    - assets/final-design/images/rectangle-461.png
+    - assets/final-design/images/group-100-jMx.png
+    - assets/final-design/images/rectangle-923-bg.png
+    - assets/final-design/images/rectangle-937-bg-Z5G.png
+    - assets/final-design/images/rectangle-919-bg-gcN.png
+    - assets/final-design/images/rectangle-889-bg.png
+    - assets/final-design/images/rectangle-931-bg-zsx.png
+    - assets/final-design/images/group-5617-kFG.png
+    - assets/final-design/images/group-USA.png
+    - assets/final-design/images/rectangle-936.png
+    - assets/final-design/images/rectangle-886.png
+    - assets/final-design/images/rectangle-943-bg.png
+    - assets/final-design/images/rectangle-920-bg.png
+    - assets/final-design/images/image-1-bg.png
+    - assets/final-design/images/group-H4a.png
+    - assets/final-design/images/group-5617-TwL.png
+    - assets/final-design/images/group-xGE.png
+    - assets/final-design/images/group-sgA.png
+    - assets/final-design/images/group-5728-HH8.png
+    - assets/final-design/images/rectangle-936-DEW.png
+    - assets/final-design/images/group-BVQ.png
+    - assets/final-design/images/rectangle-922-bg-vMC.png
+    - assets/final-design/images/rectangle-922-bg-R6e.png
+    - assets/final-design/images/rectangle-924-bg-Vwc.png
+    - assets/final-design/images/rectangle-921-vLv.png
+    - assets/final-design/images/rectangle-922-bg-TG2.png
+    - assets/final-design/images/rectangle-920-bg-xYE.png
+    - assets/final-design/images/rectangle-919-bg-xSa.png
+    - assets/final-design/images/rectangle-922-bg-Dne.png
+    - assets/final-design/images/rectangle-922-bg-ozn.png
+    - assets/final-design/images/group-peS.png
+    - assets/final-design/images/group-DLS.png
+    - assets/final-design/images/rectangle-923-bg-Hz6.png
+    - assets/final-design/images/rectangle-919-bg-MyQ.png
+    - assets/final-design/images/group-5728-b9g.png
+    - assets/final-design/images/rectangle-919-bg-Tbk.png
+    - assets/final-design/images/rectangle-923-bg-zte.png
+    - assets/final-design/images/group-100-xmU.png
+    - assets/final-design/images/group-z2S.png
+    - assets/final-design/images/group-vPY.png
+    - assets/final-design/images/rectangle-936-qGA.png
+    - assets/final-design/images/group-5618-e1C.png
+    - assets/final-design/images/rectangle-922-bg-Hdx.png
+    - assets/final-design/images/rectangle-920-bg-W2i.png
+    - assets/final-design/images/rectangle-919-bg-BLa.png
+    - assets/final-design/images/group-5617-xqc.png
+    - assets/final-design/images/group-SDk.png
+    - assets/final-design/images/rectangle-922-bg-WYE.png
+    - assets/final-design/images/rectangle-922-bg-rdc.png
+    - assets/final-design/images/rectangle-924-bg-EM4.png
+    - assets/final-design/images/rectangle-922-bg-BCS.png
+    - assets/final-design/images/rectangle-919-bg-82J.png
+    - assets/final-design/images/rectangle-919-bg-Wer.png
+    - assets/final-design/images/rectangle-921-YAa.png
+    - assets/final-design/images/vector.png
+    - assets/final-design/images/group-vUW.png
+    - assets/final-design/images/rectangle-919-bg-VEv.png
+    - assets/final-design/images/rectangle-922-bg-dkJ.png
+    - assets/final-design/images/rectangle-922-bg-u2E.png
+    - assets/final-design/images/group-5618-DNN.png
+    - assets/final-design/images/group-5728-qPU.png
+    - assets/final-design/images/group-5654.png
+    - assets/final-design/images/group-ZRp.png
+    - assets/final-design/images/group-iop.png
+    - assets/final-design/images/group-5617-bPc.png
+    - assets/final-design/images/group-MMQ.png
+    - assets/final-design/images/group-mci.png
+    - assets/final-design/images/group-F3L.png
+    - assets/final-design/images/group-100-bdY.png
+    - assets/final-design/images/rectangle-919.png
+    - assets/final-design/images/rectangle-922-bg-c94.png
+    - assets/final-design/images/rectangle-922-bg-8Ht.png
+    - assets/final-design/images/rectangle-924-bg-FMp.png
+    - assets/final-design/images/rectangle-922-bg-mQ2.png
+    - assets/final-design/images/rectangle-920-bg-k8W.png
+    - assets/final-design/images/rectangle-923-bg-RXL.png
+    - assets/final-design/images/rectangle-922-bg-iHL.png
+    - assets/final-design/images/group-100-zrJ.png
+    - assets/final-design/images/group-5618-z46.png
+    - assets/final-design/images/rectangle-919-uTt.png
+    - assets/final-design/images/group-5617-enr.png
+    - assets/final-design/images/rectangle-921-446.png
+    - assets/final-design/images/group-JUn.png
+    - assets/final-design/images/group-zkn.png
+    - assets/final-design/images/group-mzE.png
+    - assets/final-design/images/group-5728-FGz.png
+    - assets/final-design/images/group-jiE.png
+    - assets/final-design/images/group-GtN.png
+    - assets/final-design/images/rectangle-922-bg-xvA.png
+    - assets/final-design/images/rectangle-922-bg-kDU.png
+    - assets/final-design/images/rectangle-936-pvA.png
+    - assets/final-design/images/rectangle-919-bg-vYn.png
+    - assets/final-design/images/rectangle-919-bg-E3g.png
+    - assets/final-design/images/rectangle-922-bg-aQv.png
+    - assets/final-design/images/rectangle-919-bg-sTU.png
+    - assets/final-design/images/rectangle-920-bg-h34.png
+    - assets/final-design/images/rectangle-922-bg-faE.png
+    - assets/final-design/images/rectangle-923-bg-ssc.png
+    - assets/final-design/images/group-5617-9eE.png
+    - assets/final-design/images/rectangle-922-bg-kkW.png
+    - assets/final-design/images/rectangle-924-bg-a38.png
+    - assets/final-design/images/group-5618-tWr.png
+    - assets/final-design/images/rectangle-921-Nei.png
+    - assets/final-design/images/group-7-qYA.png
+    - assets/final-design/images/rectangle-461-trJ.png
+    - assets/final-design/images/group-5618-H1p.png
+    - assets/final-design/images/rectangle-461-xbg.png
+    - assets/final-design/images/group-7-N4e.png
+    - assets/final-design/images/group-5617-nFG.png
+    - assets/final-design/images/image-1-bg-avi.png
+    - assets/final-design/images/mask-group.png
+    - assets/final-design/images/image-1-bg-GS2.png
+    - assets/final-design/images/group-100-KQz.png
+    - assets/final-design/images/rectangle-925-bg.png
+    - assets/final-design/images/group-5789.png
+    - assets/final-design/images/rectangle-925.png
+    - assets/final-design/images/group-5784.png
+    - assets/final-design/images/group-5791.png
+    - assets/final-design/images/rectangle-925-bg-6p6.png
+    - assets/final-design/images/rectangle-925-bg-D8A.png
+    - assets/final-design/images/rectangle-927.png
+    - assets/final-design/images/group-100-DQi.png
+    - assets/final-design/images/group-5790.png
+    - assets/final-design/images/rectangle-925-vZU.png
+    - assets/final-design/images/rectangle-925-DGS.png
+    - assets/final-design/images/rectangle-927-aLW.png
+    - assets/final-design/images/rectangle-925-AkW.png
+    - assets/final-design/images/group-5783.png
+    - assets/final-design/images/group-5784-NaA.png
+    - assets/final-design/images/group-t5c.png
+    - assets/final-design/images/group-5783-nPY.png
+    - assets/final-design/images/group-638.png
+    - assets/final-design/images/group-5789-z7Q.png
+    - assets/final-design/images/group-5783-4Sa.png
+    - assets/final-design/images/group-100-CTQ.png
+    - assets/final-design/images/group-aJa.png
+    - assets/final-design/images/rectangle-925-T34.png
+    - assets/final-design/images/rectangle-925-CXx.png
+    - assets/final-design/images/group-Gai.png
+    - assets/final-design/images/group-5728-cgW.png
+    - assets/final-design/images/group-100-YmC.png
+    - assets/final-design/images/rectangle-925-Gdt.png
+    - assets/final-design/images/rectangle-927-oKc.png
+    - assets/final-design/images/group-p7Q.png
+    - assets/final-design/images/group-ATQ.png
+    - assets/final-design/images/group-DG2.png
+    - assets/final-design/images/group-x4v.png
+    - assets/final-design/images/group-5618-9En.png
+    - assets/final-design/images/rectangle-919-bg-Gvr.png
+    - assets/final-design/images/group-5617-3JE.png
+    - assets/final-design/images/rectangle-919-bg-43Q.png
+    - assets/final-design/images/rectangle-931.png
+    - assets/final-design/images/rectangle-919-bg-7FC.png
+    - assets/final-design/images/rectangle-919-bg-c6i.png
+    - assets/final-design/images/group-PjU.png
+    - assets/final-design/images/group-5617-iMk.png
+    - assets/final-design/images/group-5618-6Ce.png
+    - assets/final-design/images/group-5728-zWi.png
+    - assets/final-design/images/group-H7C.png
+    - assets/final-design/images/rectangle-920-bg-H1Y.png
+    - assets/final-design/images/group-U4n.png
+    - assets/final-design/images/rectangle-919-bg-jfU.png
+    - assets/final-design/images/group-rUN.png
+    - assets/final-design/images/group-rUE.png
+    - assets/final-design/images/group-100-9sU.png
+    - assets/final-design/images/rectangle-932.png
+    - assets/final-design/images/group-100-3ci.png
+    - assets/final-design/images/group-102.png
+    - assets/final-design/images/rectangle-933-bg-cQn.png
+    - assets/final-design/images/group-103.png
+    - assets/final-design/images/rectangle-935-bg-XKt.png
+    - assets/final-design/images/group-103-twp.png
+    - assets/final-design/images/rectangle-937-bg-1iv.png
+    - assets/final-design/images/rectangle-931-bg-ear.png
+    - assets/final-design/images/group-100-z1U.png
+    - assets/final-design/images/group-102-6PY.png
+    - assets/final-design/images/group-5483.png
+    - assets/final-design/images/group-5549.png
+    - assets/final-design/images/group-100-1pr.png
+    - assets/final-design/images/group-5483-BEn.png
+    - assets/final-design/images/group-5483-Sce.png
+    - assets/final-design/images/group-5617-WKY.png
+    - assets/final-design/images/rectangle-905.png
+    - assets/final-design/images/group-7-WPY.png
+    - assets/final-design/images/group-5618-fzN.png
+    - assets/final-design/images/rectangle-461-xoY.png
+    - assets/final-design/images/group-5728-pa2.png
+    - assets/final-design/images/group-100-9wc.png
+    - assets/final-design/images/rectangle-905-QvA.png
+    - assets/final-design/images/rectangle-905-Lvi.png
+    - assets/final-design/images/rectangle-905-2pv.png
+    - assets/final-design/images/rectangle-905-KQr.png
+    - assets/final-design/images/frame-RWv.png
+    - assets/final-design/images/group-5728-67g.png
+    - assets/final-design/images/group-5617-TLr.png
+    - assets/final-design/images/group-5618-yBc.png
+    - assets/final-design/images/group-100-wsc.png
+    - assets/final-design/images/group-7-RbC.png
+    - assets/final-design/images/rectangle-461-nAr.png
+    - assets/final-design/images/rectangle-905-dDQ.png
+    - assets/final-design/images/rectangle-905-bg2.png
+    - assets/final-design/images/rectangle-905-6Fx.png
+    - assets/final-design/images/group-7-1WE.png
+    - assets/final-design/images/rectangle-461-FAv.png
+    - assets/final-design/images/group-5728-mEn.png
+    - assets/final-design/images/group-100-C38.png
+    - assets/final-design/images/group-5617-mcJ.png
+    - assets/final-design/images/rectangle-905-WQv.png
+    - assets/final-design/images/rectangle-905-fE6.png
+    - assets/final-design/images/group-5618-DBC.png
+    - assets/final-design/images/rectangle-905-5Gi.png
+    - assets/final-design/images/rectangle-905-jhp.png
+    - assets/final-design/images/rectangle-905-97k.png
+    - assets/final-design/images/group-7-4QN.png
+    - assets/final-design/images/rectangle-461-vRt.png
+    - assets/final-design/images/group-100-BDG.png
+    - assets/final-design/images/rectangle-905-yd8.png
+    - assets/final-design/images/rectangle-905-7fL.png
+    - assets/final-design/images/group-5618-BAe.png
+    - assets/final-design/images/group-5617-d5x.png
+    - assets/final-design/images/group-5728-Xie.png
+    - assets/final-design/images/rectangle-905-Qgn.png
+    - assets/final-design/images/rectangle-905-YTY.png
+    - assets/final-design/images/rectangle-905-xGv.png
+    - assets/modifications/images/iconly-light-arrow-down-2.png
+    - assets/modifications/images/group-5607.png
+    - assets/modifications/images/rectangle-886-bg-qDQ.png
+    - assets/final-design/images/rectangle-905-zHk.png
+    - assets/modifications/images/rectangle-886-5nE.png
+    - assets/modifications/images/default.png
+    - assets/modifications/images/rectangle-886-dGS.png
+    - assets/modifications/images/group-5539.png
+    - assets/modifications/images/group-5534.png
+    - assets/final-design/images/rectangle-905-psQ.png
+    - assets/modifications/images/rectangle-886-bg-LBY.png
+    - assets/modifications/images/vector-wcz.png
+    - assets/modifications/images/group-100-t7Y.png
+    - assets/modifications/images/frame-Pae.png
+    - assets/modifications/images/rectangle-886-sNe.png
+    - assets/modifications/images/rectangle-886-bg-fdG.png
+    - assets/modifications/images/rectangle-886-bg-hmG.png
+    - assets/modifications/images/rectangle-886-bg-PoL.png
+    - assets/modifications/images/vector-N22.png
+    - assets/modifications/images/group-5483-xeJ.png
+    - assets/modifications/images/group-5483-YPp.png
+    - assets/modifications/images/group-5483-T2W.png
+    - assets/modifications/images/group-100-Ehk.png
+    - assets/modifications/images/group-5549-tUW.png
+    - assets/modifications/images/group-5549-F2e.png
+    - assets/modifications/images/group-5483-hwU.png
+    - assets/modifications/images/group-100-T6W.png
+    - assets/modifications/images/group-5483-GqL.png
+    - assets/modifications/images/group-5483-Bj4.png
+    - assets/modifications/images/vector-5dQ.png
+    - assets/modifications/images/vector-v6a.png
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
